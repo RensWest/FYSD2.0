@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'neonnanoborg';
-    src: url('./fonts/Neon\ Nanoborg.woff2') format('woff2');
+    src: url('./resources/fonts/Neon\ Nanoborg.woff2') format('woff2');
 }
 
 /* CSS RESET */
@@ -30,6 +30,10 @@ html {
     --ph-afstand-middel: 1.5rem;
     --ph-afstand-normaal: 1rem;
     --ph-afstand-klein: .5rem;
+}
+
+.lock-scroll {
+    overflow: hidden;
 }
 
 h1 {
@@ -66,7 +70,6 @@ footer a:hover {
 
 button:hover {
     cursor: pointer;
-    background-color: var(--blauw-4);
 }
 
 p {
@@ -264,7 +267,7 @@ header li i {
 }
 
 .topSection .primButton {
-margin-bottom: var(--ph-afstand-middel);
+margin-bottom: var(--ph-afstand-groot);
 }
 
 .topSection .secButton {
@@ -287,8 +290,12 @@ margin-bottom: var(--ph-afstand-middel);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: var(--ph-afstand-middel);
+    margin-bottom: var(--ph-afstand-groot);
     max-width: 25em;
+}
+
+.onzeServicesSection > div {
+    margin-bottom: 0;
 }
 
 .onzeServicesSection img {
@@ -745,9 +752,9 @@ header ul {
 
         display: grid;
         grid-template-columns: 24em 1fr;
-        grid-template-rows: 12em 1fr;
+        grid-template-rows: auto 1fr;
         grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-row-gap: 3em;
     }
 
     .topSection .primButton {

@@ -98,3 +98,8 @@ dotsNav.addEventListener('click', e => {
     
     
 });
+
+// lock scroll when menu is open
+function lockScroll() {
+    document.body.classList.toggle('lock-scroll');
+}
